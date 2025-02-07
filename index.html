@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Twin: Your AI Clone</title>
+    <link rel="stylesheet" href="themes/base.css">
+    <link rel="stylesheet" href="themes/modern.css" id="theme-style">
+    <style>
+        body {
+            background: #ffffff !important;
+            color: #2c2c2c !important;
+        }
+        h1, h2 {
+            color: #ff444f !important;
+            -webkit-text-fill-color: #ff444f !important;
+        }
+        .hero {
+            background: #ffffff !important;
+        }
+        .feature-card, .tech-card {
+            background: #ffffff !important;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08) !important;
+        }
+        .feature-card i, .tech-card i, .master-icon {
+            color: #ff444f !important;
+        }
+        .master-agent {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+        .master-agent .master-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .agent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .agent-card {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+        .agent-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff444f !important;
+        }
+        .agent-card h3 {
+            margin-bottom: 1rem;
+            color: #2c2c2c;
+        }
+        .tools {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .tool-tag {
+            background: rgba(255, 68, 79, 0.1);
+            color: #ff444f;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>myMate - Digital Twin</h1>
+            <p class="subtitle">Your AI Clone with Perfect Memory</p>
+            <div class="hero-animation">
+                <i class="fas fa-user original"></i>
+                <i class="fas fa-arrows-left-right"></i>
+                <i class="fas fa-robot twin"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="vision">
+        <h2>Vision</h2>
+        <p>Imagine an AI that thinks, acts, and responds exactly like you. Your Digital Twin maintains your casual style, makes intuitive decisions, and manages your digital life seamlessly.</p>
+    </section>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>RAG Knowledge</h3>
+                <p>Perfect memory of your life events, preferences, and relationships</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>Natural Style</h3>
+                <p>Maintains your casual, direct communication style</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Full Integration</h3>
+                <p>Seamlessly connects with your digital tools and platforms</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Calendar & Assistant</h3>
+                <p>Manages your schedule and acts as your personal assistant</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>System Integration</h3>
+                <p>Connects to internal systems for comprehensive information access</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure & Private</h3>
+                <p>Protected personal information with strict privacy controls</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="innovation">
+        <h2>Technical Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI Core</h3>
+                <p>OpenAI, LLM, Cline, Multi Agent System</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-database"></i>
+                <h3>Data & Storage</h3>
+                <p>Supabase, RAG, Google Drive, AWS</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Automation & Integration</h3>
+                <p>n8n, API integrations, System connectors</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="master-agent">
+            <i class="fas fa-brain master-icon"></i>
+            <h3>Master Agent</h3>
+            <p>Central intelligence that routes requests to specialized agents</p>
+        </div>
+        <div class="agent-grid">
+            <div class="agent-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Calendar Agent</h3>
+                <p>Manages schedules through Google Calendar integration</p>
+                <div class="tools">
+                    <span class="tool-tag">Google Calendar API</span>
+                    <span class="tool-tag">Meeting Scheduler</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <i class="fas fa-plane-departure"></i>
+                <h3>Leave Manager Agent</h3>
+                <p>Handles leave requests and team availability</p>
+                <div class="tools">
+                    <span class="tool-tag">Leave System API</span>
+                    <span class="tool-tag">Team Calendar</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <i class="fas fa-home"></i>
+                <h3>Personal Life Agent</h3>
+                <p>Manages personal events and memories</p>
+                <div class="tools">
+                    <span class="tool-tag">RAG Knowledge Base</span>
+                    <span class="tool-tag">Event Planner</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Professional Life Agent</h3>
+                <p>Handles work-related tasks and communications</p>
+                <div class="tools">
+                    <span class="tool-tag">Email Integration</span>
+                    <span class="tool-tag">Project Manager</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <i class="fas fa-clock"></i>
+                <h3>Daily Life Agent</h3>
+                <p>Manages daily routines and tasks</p>
+                <div class="tools">
+                    <span class="tool-tag">Task Scheduler</span>
+                    <span class="tool-tag">Routine Optimizer</span>
+                </div>
+            </div>
+            <div class="agent-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Health Life Agent</h3>
+                <p>Monitors health and wellness activities</p>
+                <div class="tools">
+                    <span class="tool-tag">Health Tracker API</span>
+                    <span class="tool-tag">Wellness Planner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <h2>Impact</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Personality Match</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Availability</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Memory Capacity</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
