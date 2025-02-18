@@ -88,7 +88,7 @@ Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTIN
 
 ## Authors
 
-- **Raju Ahmed** - *Initial work* - [rajuniit](https://github.com/rajuniit)
+- **Raju Mazumder** - *Initial work* - [rajuniit](https://github.com/rajuniit)
 
 ## Acknowledgments
 
